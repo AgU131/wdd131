@@ -1,3 +1,3 @@
-# CSE111
-## BYU-I WDD131 HTML, CSS, JS Proyects
+# WDD131
+## BYU-I WDD 131 HTML, CSS, JS Proyects
 from Agustin Heredia
