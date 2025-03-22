@@ -1,15 +1,16 @@
 :root {
     --primary-color: white ;
     --secondary-color: #265279;
-    --tertiary-color: #1c3d5a;
+    --tertiary-color: rgb(204, 202, 202);
     --accent-color: #292c2eea;
-    --accent-color2: #f8b500;
+    --accent-color2: #f4f800;
 }
 
 p {
     font-family: "Roboto", serif;
     font-weight: 400;
 }
+
 
 h1 {
     background-color: var(--secondary-color);
@@ -20,13 +21,13 @@ h1 {
     margin: auto;
 }
 
+
 nav {
     display: flex;
     justify-content: space-around;
     background-color: var(--accent-color);
     padding: 10px;
 }
-
 a {
     color: white;
     text-decoration: none;
@@ -34,34 +35,67 @@ a {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
-
 a:hover {
     text-decoration: overline;
 }
+
 
 img {
     max-width: 200px;
     max-height: 200px;
     margin: 10px;
 }
+
+
 main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--tertiary-color);
-    color: white;
-    padding: 10px;
+    padding: 0;
     margin: 5px;
+    border: 1px solid var(--tertiary-color);
     border-radius: 10px;
+}
+.card h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.3em;
+}
+.card img {
+    padding: 10px;
+}
+.card p {
+    padding: 10px;
 }
 
 footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: #265279;
+    display: grid;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+footer p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 1px;
+}
+#lastModified {
+    color: var(--accent-color2);
+    font-size: 0.8em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    text-align: center;
 }
