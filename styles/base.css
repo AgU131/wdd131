@@ -75,7 +75,9 @@ main {
     font-size: 1.3em;
 }
 .card img {
-    padding: 10px;
+    padding: 5px;
+    margin: 0;
+    border-radius: 20px;
 }
 .card p {
     padding: 10px;
@@ -103,6 +105,22 @@ h3 {
     margin: 0.5rem;
     padding: 1px;
     border-bottom: 1px solid var(--tertiary-color);
+}
+.profile_info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    padding: 1em;
+}
+.country_info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1em;
+}
+figure {
+    padding: 0;
+    max-width: 220px;
+    margin: 0;
 }
 
 
