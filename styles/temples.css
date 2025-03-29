@@ -21,7 +21,7 @@ header {
 
 nav {
     display: none;
-    background-color: #444;
+    background-color: var(--accent-color2);
 }
 
 nav ul {
@@ -64,7 +64,7 @@ img {
 }
 
 footer {
-    background-color: #333;
+    background-color: var(--accent-color2);
     color: white;
     padding: 1rem;
     margin-top: 20px;
