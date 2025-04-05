@@ -36,11 +36,16 @@ header {
     width: 100%;
     height: auto;
 }
+.hero::after {
+    position: relative;
+    overflow: hidden;
+}
 
 .data, .weather {
     padding: 1rem;
     font-weight: bold;
 }
+
 
 .weather-title {
     display: grid;
@@ -62,13 +67,4 @@ footer {
     font-weight: 100;
     font-size: 0.9rem;
     text-decoration: none;
-}
-
-@media (max-width: 600px) {
-    .weather-details {
-      flex-direction: column;
-    }
-    img {
-      width: 90%;
-    }
 }
