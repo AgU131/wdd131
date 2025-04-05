@@ -18,40 +18,39 @@
     <header>
         <h1>Argentina</h1>
     </header>
-    <div class="hero">
-        <img 
-            src="images/arg_campeon.jpg" 
-            srcset="
-                images/arg_campeon.jpg 500w,
-                images/bandera_obelisco.jpg 1000w,
-                images/arg_obelisco.jpg 1700w
-            "
-            sizes="(max-width: 600px) 500px, (max-width: 1000px) 1000px, 1500px"
-            alt="Una imagen heroica representando el propósito del sitio">
-
+    <section class="hero">
+      <picture>
+        <source srcset="images/arg_campeon.jpg" media="(max-width: 500px)">
+        <source srcset="images/bandera_obelisco.jpg" media="(max-width: 1000px)">
+        <source srcset="images/arg_obelisco.jpg" media="(min-width: 1001px)">
+        <img src="images/arg_campeon.jpg" alt="Image of the capital of Argentina" class="hero-image">
+      </picture>
+    </section>
     </div>
     <div>
         <section class="data">
             <h2>Country Data</h2>
             <div class="country-data">
-                <p id="countryName"></p>
-                <p id="countryCode"></p>
-                <p id="region"></p>
-                <p id="subregion"></p>
-                <p id="population"></p>
-                <p id="area"></p>
-                <p id="languages"></p>
-                <p id="currencies"></p>
+                <p>Area: <span id="area">--</span> sq km</p>
+                <p>Population: <span id="population">--</span></p>
+                <p>Capital: <span id="capital">--</span></p>
+                <p>Languages: <span id="languages">--</span></p>
+                <p>Currency: <span id="currency">--</span></p>
+                <p>Time Zone: <span id="time">--</span></p>
+                <p>Calling code: <span id="calling-code">--</span></p>
+                <p>Internet TDL: <span id="internet">--</span></p>
             </div>
         </section>
         <section class="weather">
-            <h2>Weather</h2>
+            <section class = "weather-title">
+                <h2>Weather</h2>
+                <img src="images/sun_icon.png" alt="Weather icon" id="sun-icon" class="weather-icon">
+            </section>
             <div class="weather-data">
-                <p id="currentTemp"></p>
-                <p id="highTemp"></p>
-                <p id="lowTemp"></p>
-                <p id="windSpeed"></p>
-                <p id="humidity"></p>
+                <p>Temp: <span id="temperature">--</span>°C</p>
+                <p>Conditions: <span id="conditions">--</span></p>
+                <p>Wind speed: <span id="wind-speed">--</span> km/h</p>
+                <p>Termic Sensation: <span id="wind-chill">--</span>°C</p>
             </div>
         </section>
     </div>
