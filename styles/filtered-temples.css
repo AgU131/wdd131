@@ -1,0 +1,35 @@
+:root {
+    --primary-color: white ;
+    --secondary-color: #265279;
+    --tertiary-color: rgb(204, 202, 202);
+    --accent-color: #292c2eea;
+    --accent-color2: rgb(98, 0, 128);
+}
+
+@media (min-width: 768px) {
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        background-color: var(--accent-color2);
+    }
+
+    nav ul li {
+        padding: 1rem;
+    }
+
+    nav ul li a:hover {
+        color: yellow;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+}
