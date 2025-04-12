@@ -9,6 +9,62 @@ hambutton.addEventListener('click', () =>{
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
 
+
+//create objects for handeling events
+const homeButton = document.getElementById('home');
+const oldButton = document.getElementById('old');
+const newButton = document.getElementById('new');
+const largeButton = document.getElementById('large');
+const smallButton = document.getElementById('small');
+const title = document.getElementById('title');
+
+homeButton.addEventListener("click", () => {
+  createTemplesCards(temples); 
+  title.innerHTML ='Home'
+});
+
+// old temples year < 1900
+oldButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  const oldTemplesArray = temples.filter(temple => {
+    const year = parseInt(temple.dedicated.split(',')[0].trim()); // Extract the year from the first part of the string to int
+    title.innerHTML ='Old Temples'
+    return year < 1900;
+  });
+  createTemplesCards(oldTemplesArray); // Show old temples
+});
+
+
+// new temples Filter (after 2000)
+newButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  const newTemples = temples.filter(temple => {
+    const year = parseInt(temple.dedicated.split(',')[0].trim()); // // Extract the year from the first part of the string to int
+    title.innerHTML ='New Temples'
+    return year > 2000;
+  });
+  createTemplesCards(newTemples); // Show new temples
+});
+
+// large temples Area greater than 90k sq Ft
+largeButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  const largeTemplesArray = temples.filter(temple => {
+    return temple.area > 90000;
+  })
+  title.innerHTML ='Large Temples'
+  createTemplesCards(largeTemplesArray); // Show large temples
+});
+
+// Small temples fiter
+smallButton.addEventListener("click", (e) =>{
+  e.preventDefault()
+  const smallTemples = temples.filter(temple => {return temple.area < 10000
+  })
+  title.innerHTML ='Small Temples'
+  createTemplesCards(smallTemples); // Show small temples
+});
+
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -93,62 +149,6 @@ const temples = [
 ];
 
 createTemplesCards(temples);
-
-//create objects for handeling events
-const homeButton = document.getElementById('home');
-const oldButton = document.getElementById('old');
-const newButton = document.getElementById('new');
-const largeButton = document.getElementById('large');
-const smallButton = document.getElementById('small');
-const title = document.getElementById('title');
-
-homeButton.addEventListener("click", () => {
-    createTemplesCards(temples); 
-    title.innerHTML ='Home'
-});
-
-// old temples year < 1900
-oldButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    const oldTemplesArray = temples.filter(temple => {
-    const year = parseInt(temple.dedicated.split(',')[0].trim()); // Extract the year from the first part of the string to int
-    title.innerHTML ='Old Temples'
-    return year < 1900;
-    });
-    createTemplesCards(oldTemplesArray); // Show old temples
-});
-
-
-// new temples Filter (after 2000)
-newButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    const newTemples = temples.filter(temple => {
-        const year = parseInt(temple.dedicated.split(',')[0].trim()); // // Extract the year from the first part of the string to int
-         title.innerHTML ='New Temples'
-        return year > 2000;
-    });
-    createTemplesCards(newTemples); // Show new temples
-  });
-
- // large temples Area greater than 90k sq Ft
-largeButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    const largeTemplesArray = temples.filter(temple => {
-      return temple.area > 90000;
-    })
-     title.innerHTML ='Large Temples'
-    createTemplesCards(largeTemplesArray); // Show large temples
-    });
-
-// Small temples fiter
-smallButton.addEventListener("click", (e) =>{
-    e.preventDefault()
-    const smallTemples = temples.filter(temple => {return temple.area < 10000
-    })
-   title.innerHTML ='Small Temples'
-   createTemplesCards(smallTemples); // Show small temples
-});
-
 
 // *************** main function for creating temple cards **************
 
