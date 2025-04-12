@@ -154,7 +154,7 @@ createTemplesCards(temples);
 
 function createTemplesCards(filteredTemples) {
   document.querySelector(".images").innerHTML = ""; // Clear the container 
-  filteredTemples.forEach(temple => {
+  temples.forEach(temple => {
     let card = document.createElement('section');
     let name = document.createElement('h3');
     let location = document.createElement('p');
