@@ -20,57 +20,21 @@
 <body>
     <header>
         <h1>Temple Album</h1>
-        <button id="menu-toggle">☰</button>
-        <nav>
-            <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+        <a id="menuButton" href="#" aria-label="Temple Page Menu"></a>
+        <nav class="navigate" id="navigate">
+            <ul class="menu" id="menu">
+                <li><a id="home"  href="" title="Home">Home</a></li>
+                <li><a id="old"   href="" title="Old">Old</a></li>
+                <li><a id="new"   href="" title="New">New</a></li>
+                <li><a id="large" href="" title="Large">Large</a></li>
+                <li><a id="small" href="" title="Small">Small</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Temples</h2>
-        <section class="gallery">
-            <figure>
-                <img src="images/cordoba_temple.jpeg" alt="Temple 1">
-                <figcaption>Cordoba Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/cordoba_temple.jpeg" alt="Temple 2">
-                <figcaption>Cordoba Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/cordoba_temple.jpeg" alt="Temple 3">
-                <figcaption>Cordoba Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/cordoba_temple.jpeg" alt="Temple 4">
-                <figcaption>Cordoba Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/cordoba_temple.jpeg" alt="Temple 5">
-                <figcaption>Cordoba Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/cordoba_temple.jpeg" alt="Temple 6">
-                <figcaption>Cordoba Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/cordoba_temple.jpeg" alt="Temple 7">
-                <figcaption>Cordoba Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/cordoba_temple.jpeg" alt="Temple 8">
-                <figcaption>Cordoba Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/cordoba_temple.jpeg" alt="Temple 9">
-                <figcaption>Cordoba Temple</figcaption>
-            </figure>
-        </section>
+        <h2 id="title" class="title">Temples</h2>
+        <div class="templeimages">
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="year"></span> 🧉 Agustin Heredia 🧉 Argentina | Last Modified: <span id="lastModified"></span></p>
