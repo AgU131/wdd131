@@ -30,5 +30,21 @@ const products = [
       averagerating: 5.0
     }
 ];
-const form = document.querySelector("#product-form");
-const productSelect = document.querySelector("#product-select");
+
+//populate Selector with data "products"
+products.forEach(p => {
+    const option = document.createElement("option");
+    option.setAttribute("value",p.id);
+    option.textContent = p.name
+  
+    document.querySelector("select").appendChild(option);
+  })
+  
+  let formsSended = window.localStorage.getItem("forms") || 0
+  
+  
+  const submit = document.getElementById('submitButton')
+  submit.addEventListener('click'  , () => {
+      formsSended++;
+      window.localStorage.setItem("forms", formsSended);
+  });
