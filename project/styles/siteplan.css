@@ -49,6 +49,12 @@ img {
     height: auto;
     border-radius: 10px;
 }
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px ; /* 50%; for semi circular logo */
+    margin: 0 auto;
+}
 header, footer {
     background-color: var(--primary-color);
     color: white;
