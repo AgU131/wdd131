@@ -47,4 +47,4 @@ products.forEach(p => {
   submit.addEventListener('click'  , () => {
       formsSended++;
       window.localStorage.setItem("forms", formsSended);
-  });
+});
