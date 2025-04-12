@@ -26,6 +26,9 @@ h2, h3 {
     margin: 10px 0;
     text-align: center;
 }
+h3 {
+    color: var(--text-color);
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -65,11 +68,5 @@ header a {
     margin: 0 10px;
     padding: 10px 20px;
 }
-header a::after {
-    color: yellow;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 10px;
-    padding: 10px 20px;
-}
+
 
