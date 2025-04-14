@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Final Project – Agustin Heredia</title>
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals - Agustin Heredia - Final Project Activity: Local Gym page">
+    <meta name="author" content="Agustin Heredia">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Su Gym</h1>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Classes</a>
+            <a href="#">Prices</a>
+            <a href="excercises.html">Exercises</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="logo-box">
+            <img src="images/logo.jpg" alt="gym-logo" width="75">
+        </div>
+        
+    </header>
+    <main>  
+    <section class="gym-packs">
+    <h2>Monthly Training Gym Pack</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Pack</th>
+                <th>Days per Week</th>
+                <th>Trainer Follow Up</th>
+                <th>Personalized Routine</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Premium</td>
+                <td>5 days</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>$89</td>
+            </tr>
+            <tr>
+                <td>Lone Wolf</td>
+                <td>5 days</td>
+                <td>No</td>
+                <td>No</td>
+                <td>$79</td>
+            </tr>
+            <tr>
+                <td>Advanced</td>
+                <td>3 days</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>$69</td>
+            </tr>
+            <tr>
+                <td>Special</td>
+                <td>3 days</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>$59</td>
+            </tr>
+            <tr>
+                <td>Eliptic</td>
+                <td>2 days</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>$59</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+    <section class="signup-form">
+        <h2>Sing Up and get Strong!</h2>
+        <form action="review.html" method="get" class="formreview">
+            <label>Your Name * <span class="italic" required></span>
+                <input type="text" name="name" id="name"></label>
+            
+            <label for="packName">Pack Name * </label> 
+            <select name="packName" id="packName" required>
+                <option disabled selected value="">Choose a Product ...</option>
+            </select>   
+            
+            <label>Days per Week *</label>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="rating" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="rating" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="rating" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="rating" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="rating" value="1" required><label for="onestar"></label>
+                </div>
+                
+                <label for="date">Date of Birth *</label>
+                <input type="date" id="date" name="date" required>
+               
+                <label>What do you want to include in this pack?<br>(Check all that apply)</label>
+                    <label><input type="checkbox" name="durability" id="durability" value="yes">Trainer Follow Up</label>
+                    <label><input type="checkbox" name="easeOfUse" id="easeofuse" value="yes">Personalized Routine</label>
+                    <label><input type="checkbox" name="performance" id="performance" value="yes">Shirt</label>
+                    <label><input type="checkbox" name="design" id="design" value="yes">Water Bottle</label>
+    
+                <label>Comments<span class="italic">(Optional)</span><textarea name="Written" id="writtenreview" cols="30" rows="5"></textarea></label>
+                
+                <input type="submit" value="Sing UP!" id="submitButton">
+            </form>
+    </section>
+    </main>
+    <footer>
+        <section>
+            <div class="sociallinks">
+                <nav class="sociallinks"> 
+                    <a href="https://facebook.com"> 
+                        <img src="images/logo_fb.png" alt="Facebook" width="30"> 
+                    </a> 
+                    <a href="https://twitter.com"> 
+                        <img src="images/logo_wsp.png" alt="WhatsApp" width="30"> 
+                    </a> 
+                    <a href="https://instagram.com"> 
+                        <img src="images/logo_ig.png" alt="Instagram" width="30"> 
+                    </a> 
+                </nav>
+            </div>
+            <div>
+                <p>&copy; <span id="currentyear"></span> 🧉 Agustin Heredia 🧉 Argentina</p>
+                <p id="lastModified"><span id="dateModified"></span></p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
