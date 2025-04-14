@@ -1,63 +1,128 @@
 // Dates
-document.getElementByname("currentyear").textContent = new Date().getFullYear();
-document.getElementByname("lastModified").textContent = "Last Modification: " + document.lastModified;
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = "Last Modification: " + document.lastModified;
 
-// Prices Page
-const packs = [
+// Exercise Page
+const exercises = [
   {
-      id: "premium-pack",
-    name: "Premium  Pack",
+    name: "Bench Press",
+    machine: "Bench + Barbell",
+    time: "10 min",
+    difficulty: "Intermediate",
+    type: "Strength",
+    muscleGroup: "Chest",
+    equipmentRequired: true,
+    image: "images/bench-press.jpg"
   },
   {
-      id: "lone-pack",
-    name: "Lone Wolf Pack",
+    name: "Squats",
+    machine: "Rack or Free",
+    time: "15 min",
+    difficulty: "Intermediate",
+    type: "Strength",
+    muscleGroup: "Legs",
+    equipmentRequired: true,
+    image: "images/squats.jpg"
   },
   {
-      id: "advanced-pack",
-    name: "Advanced Pack",
+    name: "Treadmill Running",
+    machine: "Treadmill",
+    time: "20 min",
+    difficulty: "Beginner",
+    type: "Cardio",
+    muscleGroup: "Full Body",
+    equipmentRequired: true,
+    image: "images/running.jpg"
   },
   {
-      id: "special-pack",
-    name: "Special Pack",
+    name: "Push-Ups",
+    machine: "None",
+    time: "5 min",
+    difficulty: "Beginner",
+    type: "Strength",
+    muscleGroup: "Chest / Arms",
+    equipmentRequired: false,
+    image: "images/push-up.jpg"
   },
   {
-      id: "eliptical-pack",
-    name: "Eliptical Pack",
+    name: "Pull-up",
+    machine: "Pull Up Bar",
+    time: "10 min",
+    difficulty: "Intermediate",
+    type: "Strength",
+    muscleGroup: "Back",
+    equipmentRequired: true,
+    image: "images/pull-up.jpg"
   },
   {
-      id: "personalized-pack",
-    name: "Personalized Pack",
+    name: "Plank",
+    machine: "Mat",
+    time: "3 min",
+    difficulty: "Intermediate",
+    type: "Core",
+    muscleGroup: "Abs",
+    equipmentRequired: false,
+    image: "images/plank.jpg"
+  },
+  {
+    name: "Bicep Curl",
+    machine: "Dumbbells or Cable Machine",
+    time: "6 min",
+    difficulty: "Beginner",
+    type: "Strength",
+    muscleGroup: "Arms",
+    equipmentRequired: true,
+    image: "images/biceps.jpg"
+  },
+  {
+    name: "Jump Rope",
+    machine: "None",
+    time: "10 min",
+    difficulty: "Intermediate",
+    type: "Cardio",
+    muscleGroup: "Full Body",
+    equipmentRequired: true,
+    image: "images/jump-rope.jpg"
+  },
+  {
+    name: "Squats",
+    machine: "None",
+    time: "12 min",
+    difficulty: "Intermediate",
+    type: "Strength",
+    muscleGroup: "Legs",
+    equipmentRequired: true,
+    image: "images/squats.jpg"
+  },
+  {
+    name: "Bulgarian Squats",
+    machine: "None",
+    time: "7 min",
+    difficulty: "Advanced",
+    type: "Cardio / Strength",
+    muscleGroup: "Legs",
+    equipmentRequired: true,
+    image: "images/bulgarian-squats.jpg"
   }
 ];
 
-// packs.forEach(p => {
-//     const option = document.createElement("option");
-//     option.setAttribute("value",p.id);
-//     option.textContent = p.name
+const container = document.getElementById("exercise-container");
 
-//     document.querySelector("select").appendChild(option);
-//   })
+exercises.forEach(exercise => {
+  const card = document.createElement("div");
+  card.className = "card";
+  card.innerHTML = `
+      <img src="${exercise.image}" alt="${exercise.name}" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+      <h2>${exercise.name}</h2>
+      <p><strong>Machine:</strong> ${exercise.machine}</p>
+      <p><strong>Time:</strong> ${exercise.time}</p>
+      <p><strong>Difficulty:</strong> ${exercise.difficulty}</p>
+      <p><strong>Type:</strong> ${exercise.type}</p>
+      <p><strong>Muscle Group:</strong> ${exercise.muscleGroup}</p>
+      <p><strong>Equipment:</strong> ${exercise.equipmentRequired ? "Yes" : "No"}</p>
+      <button class="btn">Start Exercise</button>
+      <button class="btn">☆ Add to Favorites ☆</button>
+      `;
+  container.appendChild(card);
+});
 
-//   let formsSended = window.localStorage.getItem("forms") || 0
-
-
-//   const submit = document.getElementById('submitButton')
-//   submit.addEventListener('click'  , () => {
-//       formsSended++;
-//       window.localStorage.setItem("forms", formsSended);
-// });
-
-// packs.forEach(p => {
-//     const pack = document.createElement("option");
-//     pack.setAttribute("value",p.id);
-//     pack.textContent = p.name
-
-//     document.querySelector("select").appendChild(pack);
-//   })
-//   let formsSended = window.localStorage.getItem("forms") || 0     //Aca estoy teniendo problemas para hacer que aparezcan los items en el select
-
-//   const submit = document.getElementById('submitButton')
-//   submit.addEventListener('click'  , () => {
-//       formsSended++;
-//       window.localStorage.setItem("forms", formsSended);
-// });
