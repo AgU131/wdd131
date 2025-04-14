@@ -28,6 +28,7 @@ const packs = [
 
 // Prices Page
 
+
 packs.forEach(p => {
     const option = document.createElement("option");
     option.setAttribute("value",p.id);
@@ -45,17 +46,17 @@ packs.forEach(p => {
       window.localStorage.setItem("forms", formsSended);
 });
 
-packs.forEach(p => {
-    const pack = document.createElement("option");
-    pack.setAttribute("value",p.id);
-    pack.textContent = p.name
+// packs.forEach(p => {
+//     const pack = document.createElement("option");
+//     pack.setAttribute("value",p.id);
+//     pack.textContent = p.name
 
-    document.querySelector("select").appendChild(pack);
-  })
-  let formsSended = window.localStorage.getItem("forms") || 0     //Aca estoy teniendo problemas para hacer que aparezcan los items en el select
+//     document.querySelector("select").appendChild(pack);
+//   })
+//   let formsSended = window.localStorage.getItem("forms") || 0     //Aca estoy teniendo problemas para hacer que aparezcan los items en el select
 
-  const submit = document.getElementById('submitButton')
-  submit.addEventListener('click'  , () => {
-      formsSended++;
-      window.localStorage.setItem("forms", formsSended);
-});
+//   const submit = document.getElementById('submitButton')
+//   submit.addEventListener('click'  , () => {
+//       formsSended++;
+//       window.localStorage.setItem("forms", formsSended);
+// });
