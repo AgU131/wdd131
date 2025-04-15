@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Final Project – Agustin Heredia</title>
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals - Agustin Heredia - Final Project Activity: Local Gym page">
+    <meta name="author" content="Agustin Heredia">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.jpg" alt="gym-logo" width="75">
+            <h1>Su Gym</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="classes.html">Classes</a>
+            <a href="prices.html">Prices</a>
+            <a href="excercises.html">Exercises</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="company-info">
+            <h1>Contact Us</h1>
+            <div class="contact-details">
+                <p>📞 (555) 55555555</p>
+                <p>✉️ info@whitewateradventures.com</p>
+                <p>📍 Adresss street North 222, Cordoba, Argentina.</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_URL" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employee-cards">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Sarah Johnson">
+                    <figcaption>Sarah Johnson - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Mike Thompson">
+                    <figcaption>Mike Thompson - Safety Director</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Lisa Chen">
+                    <figcaption>Lisa Chen - Customer Experience Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+             
+                <div class="form-group">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+             
+                <div class="form-group">
+                    <p>Purpose of Message:</p>
+                    <div class="radio-options">
+                        <label>
+                            <input type="radio" id="inquiry" name="purpose" value="inquiry" required>
+                            General Inquiry
+                        </label>
+                        <label>
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label>
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="usermessage">Message:</label>
+                    <textarea id="usermessage" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
+                <button type="submit">Send Message</button>
+             </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🧉 Agustin Heredia 🧉 Argentina</p>
+        <p id="lastModified"><span id="dateModified"></span></p>
+    </footer>
+</body>
+</html>
