@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #003f7d;
+    --secondary-color: #e30613;
+    --background-color: #1d1d1d;
+    --accent-color: #ecf0f1;
+    --text-color: #ffffff;
+    --extra-color: #2c3e50;
+    --text-color-light: #f0f0f0; 
+}
+
+/* CONTACT PAGE */
+/* EMPLOYESS */
+.contact-page {
+  padding: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff7f0;
+}
+.company-info {
+  text-align: center;
+  background: linear-gradient(to right, #ffe0b2, #fff3e0);
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  color: #5d4037;
+}
+.company-info h1 {
+  font-size: 2.5rem;
+  color: #e65100;
+  margin-bottom: 1rem;
+}
+.contact-details p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+.company-info iframe {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Trainer Cards */
+.employee-profiles {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fffaf4;
+  border-radius: 20px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
+}
+.employee-profiles h2 {
+  font-size: 2rem;
+  color: #e64a19;
+  margin-bottom: 2rem;
+}
+.employee-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.employee-cards figure {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+.employee-cards figure:hover {
+  transform: translateY(-8px);
+}
+.employee-cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border: 4px solid #f57c00;
+}
+.employee-cards figcaption {
+  font-weight: 600;
+  color: #5d4037;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .employee-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .company-info iframe {
+    height: 300px;
+  }
+}
+
+
+.sociallink {
+  display: flex;
+    flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.sociallink a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #3b5998; /* Facebook color */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}

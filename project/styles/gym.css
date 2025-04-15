@@ -1,0 +1,177 @@
+:root {
+    --primary-color: #003f7d;
+    --secondary-color: #e30613;
+    --background-color: #1d1d1d;
+    --accent-color: #ecf0f1;
+    --text-color: #ffffff;
+    --extra-color: #2c3e50;
+    --text-color-light: #f0f0f0; 
+}
+
+/* GYM FORM (prices page) */
+form {
+  background-color: var(--text-color-light);
+  padding: 2rem;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.formreview label {
+  display: block;
+  padding-top: 1rem;
+}
+.formreview input[type="text"],
+.formreview input[type="date"],
+.formreview select,
+.formreview textarea
+{
+  display: block;
+  padding: .75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+.formreview input[type="checkbox"] {
+  margin-right: 5px;
+  padding-top: 0% ;
+}
+.italic {
+  color: var(--background-color);
+  font-style: italic;
+  font-size: small;
+}
+.italic a {
+  font-weight: bold;
+}
+.formreview input[type="submit"]{
+  max-width: 400px;
+  padding: .75rem;
+  border-radius: 10px;
+  margin: 2rem 0%;
+  font-size: large;
+  background-color: beige;
+  font-weight: bold;
+}
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  font-weight: 900;
+}
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+.stars > label {
+	color: #e30613;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+    padding-top: 0%;
+    margin-top: 0;
+}
+.stars > label:hover {
+	color: #000;
+}
+.stars > label::before {
+	content: "\2606";
+}
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+/* Review page */
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--text-color-light);
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+#reviewhome {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: navy;
+  font-weight: 900;
+  font-size: large;
+}
+
+/* GYM SCHEDULE */
+.gym-packs {
+  padding: 2em;
+  background-color: var(--text-color-light);
+  border-radius: 5px;
+  margin: 40px 0;
+  size-adjust: auto;
+  max-width: 100%;
+}
+.gym-packs h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+th, td {
+  min-width: 120px;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--text-color-light);
+  font-family: 'Roboto', sans-serif;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+th {
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+tr:nth-child(even) {
+  background-color: rgb(190, 216, 224);
+}
+tr:hover {
+  background-color: var(--extra-color);
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .gym-packs {
+      padding: 1em;
+  }
+  .gym-packs h2 {
+      font-size: 1.5rem;
+  }
+  th, td {
+      font-size: 0.9rem;
+  }
+  table {
+      font-size: 0.8rem;
+  }
+  .card-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+

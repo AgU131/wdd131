@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="stylesheet" href="styles/index-page.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,12 +23,15 @@
             <img src="images/logo.jpg" alt="gym-logo" width="75">
             <h1>Su Gym</h1>
         </div>
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="classes.html">Classes</a>
-            <a href="prices.html">Prices</a>
-            <a href="excercises.html">Exercises</a>
-            <a href="contact.html">Contact</a>
+        <nav class="main-nav" id="main-nav">
+            <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="excercises.html">Exercises</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main>  
@@ -37,9 +41,20 @@
                 <a href="prices.html" class="button">See Memberships</a>
             </section>
             <section class="happy-customer">
-                <h2>Our happy-customer</h2>
+                <h2>Our Happy Customers</h2>
                 <div class="customers">
-                    
+                    <figure id="customer1">
+                        <img src="images/personal_trainer_wcustomer.jpg" alt="Carlos Chen">
+                        <figcaption>Carlos Chen - Asked for a Personal Trainer</figcaption>
+                    </figure>
+                    <figure id="customer2">
+                        <img src="images/eating_fruits.jpg" alt="Rodrigo Sconginini">
+                        <figcaption>Rodrigo Sconginini - Asked for a Personal Trainer</figcaption>
+                    </figure>
+                    <figure id="customer3">
+                        <img src="images/nutrition.jpg" alt="Lisa Chen">
+                        <figcaption>Lisa Chen - Asked for a Personal Nutritionist</figcaption>
+                    </figure>
                 </div>
                 <a href="classes.html" class="button" id="classes-button">See Our Classes</a>
         </section>
@@ -50,8 +65,25 @@
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> 🧉 Agustin Heredia 🧉 Argentina</p>
-        <p id="lastModified"><span id="dateModified"></span></p>
+        <section class="sociallinks">
+            <div class="sociallinks">
+                <nav class="sociallinks"> 
+                    <a href="https://facebook.com"> 
+                        <img src="images/logo_fb.png" alt="Facebook" width="30"> 
+                    </a> 
+                    <a href="https://wa.me/"> 
+                        <img src="images/logo_wsp.png" alt="WhatsApp" width="30"> 
+                    </a> 
+                    <a href="https://instagram.com"> 
+                        <img src="images/logo_ig.png" alt="Instagram" width="30"> 
+                    </a> 
+                </nav>
+            </div>
+        </section>
+        <section class="dates">
+            <p>&copy; <span id="currentyear"></span> 🧉 Agustin Heredia 🧉 Argentina</p>
+            <p id="lastModified"><span id="dateModified"></span></p>
+        </section>
     </footer>
 </body>
 </html>

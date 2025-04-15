@@ -6,7 +6,10 @@
     <title>WDD 131 – Review – Agustin Heredia</title>
     <meta name="description" content="WDD 131 – Devolution Review- Agustin Heredia - Final Project Activity: Local Gym page">
     <meta name="author" content="Agustin Heredia">
+
     <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="stylesheet" href="styles/gym.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +19,20 @@
 </head>
 <body>
     <header>
-        <h1>Submitting Devolution</h1>   
+        <div class="logo-box">
+            <img src="images/logo.jpg" alt="gym-logo" width="75">
+            <h1>Submitting Devolution</h1>  
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="excercises.html">Exercises</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="review">
        <br><h2>We registered your Info, <br>Thank you for submitting! We'll be contacting you soon!</h2><br>
@@ -26,13 +42,18 @@
         <a href="index.html" class="italic" id="reviewhome">Let's keep Checking the Home Page</a>      
     </main>
     <footer>
-        <section>
+        <section class="easy-contact">
+            <h2>Contact Us!</h2>
+            <p><strong>Address:</strong> Córdoba, Argentina</p>
+            <p><strong>Email:</strong> contact@sugym.com</p>
+        </section>
+        <section class="sociallinks">
             <div class="sociallinks">
                 <nav class="sociallinks"> 
                     <a href="https://facebook.com"> 
                         <img src="images/logo_fb.png" alt="Facebook" width="30"> 
                     </a> 
-                    <a href="https://twitter.com"> 
+                    <a href="https://wa.me/"> 
                         <img src="images/logo_wsp.png" alt="WhatsApp" width="30"> 
                     </a> 
                     <a href="https://instagram.com"> 
@@ -40,10 +61,10 @@
                     </a> 
                 </nav>
             </div>
-            <div>
-                <p>&copy; <span id="currentyear"></span> 🧉 Agustin Heredia 🧉 Argentina</p>
-                <p id="lastModified"><span id="dateModified"></span></p>
-            </div>
+        </section>
+        <section class="dates">
+            <p>&copy; <span id="currentyear"></span> 🧉 Agustin Heredia 🧉 Argentina</p>
+            <p id="lastModified"><span id="dateModified"></span></p>
         </section>
     </footer>
 </body>

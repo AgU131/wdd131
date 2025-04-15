@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #003f7d;
+    --secondary-color: #e30613;
+    --background-color: #1d1d1d;
+    --accent-color: #ecf0f1;
+    --text-color: #ffffff;
+    --extra-color: #2c3e50;
+    --text-color-light: #f0f0f0; 
+}
+
+/* INDEX page */
+/* Customers Section */
+.happy-customer {
+  background: linear-gradient(135deg, #f0f4f8, #dceefb);
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.happy-customer h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: 700;
+}
+.customers {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.customers figure {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.customers figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.customers img {
+  width: 100%;
+  height: auto;
+  border-radius: 30%;
+  margin-bottom: 1rem;
+  border: 2px solid #00bcd4;
+}
+.customers figcaption {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Button */
+#classes-button {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#classes-button:hover {
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
+
+/* About Us section */
+.aboutus {
+  background: linear-gradient(135deg, #ffffff, #e3f2fd);
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 16px;
+  margin: 3rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.aboutus h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.aboutus p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutus .button {
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.aboutus .button:hover {
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
+section {
+  margin-top: 4rem;
+}
+
+/* Easy conctact */
+.easy-contact {
+  background-color: #fff3e0; /* color suave y cálido */
+  padding: 1.5rem 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  color: #5d4037;
+  font-family: 'Open Sans', sans-serif;
+}
+.easy-contact h2 {
+  font-size: 1.8rem;
+  color: #e65100;
+  margin-bottom: 1rem;
+}
+.easy-contact p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+.easy-contact strong {
+  font-weight: 600;
+}
