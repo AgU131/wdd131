@@ -311,3 +311,45 @@ input[type="radio"] {
   font-weight: 900;
   font-size: large;
 }
+
+
+
+/* CANTACT PAGE */
+/* EMPLOYESS */
+.employee-profiles h2 {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.employee-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2em;
+  padding: 1em;
+  
+}
+.employee-cards figure {
+  text-align: center;
+  border: thin #c0c0c0 solid;
+  display: grid;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 210px;
+  margin: 0;
+}
+.employee-cards figure img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+  object-position: center;
+}
+.employee-cards figcaption {
+  margin-top: 1em;
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
