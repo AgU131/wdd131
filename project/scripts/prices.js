@@ -30,8 +30,6 @@ const packs = [
     }
 ];
 
-// Prices Page
-
 
 packs.forEach(p => {
     const option = document.createElement("option");
